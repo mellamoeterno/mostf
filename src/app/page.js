@@ -43,7 +43,7 @@ const productData = [
   {/* Header */}
   <header className="bg-gray-900 text-white w-full">
     <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-5 relative">
-      <img src="/logoEtc/mostfLogo.ico" alt="Mostf Logo" className="h-10 w-auto" />
+      <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672771/icon_mzoomm.ico" alt="Mostf Logo" className="h-10 w-auto" />
       
       {/* Nav - hidden on mobile */}
       <nav className="hidden md:flex space-x-6 mx-auto">

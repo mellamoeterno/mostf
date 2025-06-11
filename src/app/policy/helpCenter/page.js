@@ -6,7 +6,7 @@ export default function helpCenter() {
         {/* Left - Logo */}
         
           {/* Replace with your logo image */}
-          <img src="/logoEtc/mostfLogo.ico" alt="Logo" className="h-10 absolute left-15 w-auto" />
+          <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672771/icon_mzoomm.ico" alt="Logo" className="h-10 absolute left-15 w-auto" />
         {/* Center - Navigation Links */}
         <nav className="hidden md:flex space-x-8 mx-auto">
         </nav>
