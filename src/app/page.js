@@ -14,9 +14,9 @@ export default function DesktopComponent() {
       
       {/* Nav - hidden on mobile */}
       <nav className="hidden md:flex space-x-6 mx-auto">
-        <Link href="https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00" className="hover:underline">Jaquetas</Link>
-        <Link href="/trousersPage" className="hover:underline">Calças</Link>
-        <Link href="https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00" className="hover:underline">Conjuntos</Link>
+        <Link href="https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00" className="hover:underline"></Link>
+        <Link href="/trousersPage" className="hover:underline"></Link>
+        <Link href="https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00" className="hover:underline"></Link>
       </nav>
     </div>
   </header>
