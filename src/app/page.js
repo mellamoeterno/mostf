@@ -3,40 +3,7 @@ import Link from "next/link";
 
 {/* set function later to reach faster the images, name, prices. */}
 export default function DesktopComponent() {
-  const image = [
-  '/conjunto/conjunto1.jpeg',
-  '/conjunto/conjunto2.jpeg',
-  '/conjunto/conjunto3.jpeg',
-  '/conjunto/conjunto4.jpeg',
-  '/conjunto/conjunto5.jpeg',
-  '/conjunto/conjunto1.jpeg',
-];
-const productData = [
-  {
-    name: 'Conjunto Aurora',
-    description: 'Um conjunto elegante para ocasiões especiais.',
-  },
-  {
-    name: 'Conjunto Sol',
-    description: 'Ideal para dias quentes e ensolarados.',
-  },
-  {
-    name: 'Conjunto Noite',
-    description: 'Perfeito para eventos noturnos sofisticados.',
-  },
-  {
-    name: 'Conjunto Primavera',
-    description: 'Inspirado nas flores da estação.',
-  },
-  {
-    name: 'Conjunto Verão',
-    description: 'Leve, confortável e estiloso.',
-  },
-  {
-    name: 'Conjunto Retrô',
-    description: 'Estilo vintage com toque moderno.',
-  },
-];
+
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#112233b2] via-[#0e1e2e9a] to-[#0d1d2eaf] font-sans px-4 sm:px-6 md:px-8 gap-10">
 
@@ -124,6 +91,95 @@ const productData = [
             src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672830/auroraVinho_4_dl4lnv.jpg",
             title: "Aurora vinho",
             desc: "aurora vinho"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_2_2r_zr39iw.jpg",
+            title: "Barbara Caqui",
+            desc: "barbara caqui"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_1_mh6ngs.jpg",
+            title: "Barbara Branco",
+            desc: "barbara Branco"
+          }
+        ].map((item, index) => (
+          <Link href={item.href} key={index} className="flex flex-col items-center bg-white p-4 shadow hover:shadow-md transition rounded">
+            <img src={item.src} alt={item.title} className="w-full h-100 object-cover mb-4 rounded" />
+            <h2 className="text-lg font-semibold">{item.title}</h2>
+            <p className="text-sm text-gray-600">{item.desc}</p>
+          </Link>
+        ))}
+      </div>
+    </section>
+    <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center mb-10">
+        Nossas Jaquetas, Blusas & tal
+      </h2>
+
+      {/* Product Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {[
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672897/trico_4_plg40d.jpg",
+            title: "Blusa trico",
+            desc: "Blusa em trico"
+          },
+          {
+            href: "/jaquetasPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672893/pu_3_iibpi1.jpg",
+            title: "jaqueta Pu",
+            desc: "pu"
+          },
+          {
+            href: "/jaquetasPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672838/livia_4_jpu2gj.jpg",
+            title: "Conjunto Livia",
+            desc: "Além do céu"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672835/italiaOceano_4_vptr9t.jpg",
+            title: "Itália Oceano",
+            desc: "Estilo impecável"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672831/conjunto_7_csvmte.jpg",
+            title: "Rosa buque",
+            desc: "Rosa chique"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672831/conjunto_6_ojwfyg.jpg",
+            title: "Conjunto 6",
+            desc: "6"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672830/barbara_3_pgquqv.jpg",
+            title: "Bárbara",
+            desc: "barbara"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672830/auroraVinho_4_dl4lnv.jpg",
+            title: "Aurora vinho",
+            desc: "aurora vinho"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_2_2r_zr39iw.jpg",
+            title: "Barbara Caqui",
+            desc: "barbara caqui"
+          },
+          {
+            href: "/conjuntosPagina",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_1_mh6ngs.jpg",
+            title: "Barbara Branco",
+            desc: "barbara Branco"
           }
         ].map((item, index) => (
           <Link href={item.href} key={index} className="flex flex-col items-center bg-white p-4 shadow hover:shadow-md transition rounded">
