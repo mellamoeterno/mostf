@@ -127,7 +127,7 @@ const productData = [
           }
         ].map((item, index) => (
           <Link href={item.href} key={index} className="flex flex-col items-center bg-white p-4 shadow hover:shadow-md transition rounded">
-            <img src={item.src} alt={item.title} className="w-full h-56 object-cover mb-4 rounded" />
+            <img src={item.src} alt={item.title} className="w-full h-100 object-cover mb-4 rounded" />
             <h2 className="text-lg font-semibold">{item.title}</h2>
             <p className="text-sm text-gray-600">{item.desc}</p>
           </Link>
