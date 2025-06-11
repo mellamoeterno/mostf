@@ -46,7 +46,7 @@ export default function DesktopComponent() {
         {[
           {
             href: "/conjuntosPagina",
-            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672838/mirela_1_d1tfoq.jpg",
+            src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672839/mirela_3_sldvyo.jpg",
             title: "Conjunto Mirela",
             desc: "Perfeito para tardes"
           },
