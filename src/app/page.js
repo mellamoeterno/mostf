@@ -45,20 +45,12 @@ export default function DesktopComponent() {
 
   const conjuntos = [
     {
-      id: "mirela-0001",
-      href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",
-      src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672839/mirela_3_sldvyo.jpg",
-      title: "Conjunto Mirela",
-      desc: "perfeito para tardes",
-      price: "199",
-    },
-    {
       id: "vinho-0002",
       href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672838/macacaoVinho_pcyqid.jpg",
       title: "Conjunto Vinho",
       desc: "vinhos e noites",
-      price: "199",
+      price: 199,
     },
     {
       id: "livia-0003",
@@ -66,7 +58,7 @@ export default function DesktopComponent() {
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672838/livia_4_jpu2gj.jpg",
       title: "Conjunto Livia",
       desc: "além do céu",
-      price: "199",
+      price: 199,
     },
     {
       id: "oceano-0004",
@@ -74,7 +66,7 @@ export default function DesktopComponent() {
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672835/italiaOceano_4_vptr9t.jpg",
       title: "Itália Oceano",
       desc: "estilo impecável",
-      price: "199",
+      price: 199,
     },
     {
       id: "buque-0005",
@@ -82,7 +74,7 @@ export default function DesktopComponent() {
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672831/conjunto_7_csvmte.jpg",
       title: "Rosa buquê",
       desc: "rosa buquê",
-      price: "199",
+      price: 199,
     },
     {
       href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",

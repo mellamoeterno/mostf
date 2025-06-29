@@ -57,20 +57,20 @@ export function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{
-        cart,
-        addToCart,
-        removeFromCart,
-        updateQuantity,
-        clearCart,
-        cartCount: cart.reduce((sum, item) => sum + (item.quantity || 1), 0),
-        cartTotal: cart
-          .reduce(
-            (sum, item) => sum + parseFloat(item.price.replace('$', '')) * (item.quantity || 1),
-            0
-          )
-          .toFixed(2)
-      }}
+    value={{
+      cart,
+      addToCart,
+      removeFromCart,
+      updateQuantity,
+      clearCart,
+      cartCount: cart.reduce((sum, item) => sum + (item.quantity || 1), 0),
+      cartTotal: cart
+        .reduce(
+          (sum, item) => sum + (Number(item.price) || 0) * (item.quantity || 1),
+          0
+        )
+        .toFixed(2)
+    }}
     >
       {children}
     </CartContext.Provider>
