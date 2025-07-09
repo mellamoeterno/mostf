@@ -30,7 +30,7 @@ export default function CartPage() {
       
       {cart.length === 0 ? (
         <div className="text-center py-8">
-          <p className="text-gray-500 mb-4">Seu Carrinho Está Vazio</p>
+          <p className="text-gray-500 mb-4">Seu Carrinho Está Vazioo</p>
           <Link 
             href="/update" 
             className="inline-block bg-blue-500 text-black px-4 py-2 rounded hover:bg-blue-600 transition-colors"
