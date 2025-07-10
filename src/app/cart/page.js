@@ -26,7 +26,7 @@ export default function CartPage() {
   return (
     <div className="cart-page h-300">
     <main className="container mx-auto p-4 max-w-4xl">
-      <h1 className="text-2xl font-bold mb-6 text-black">Meu Carrinho (insert)-(insert)-(insert)-</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">Meu Carrrinho (insert)-(insert)-(insert)-</h1>
       
       {cart.length === 0 ? (
         <div className="text-center py-8">
