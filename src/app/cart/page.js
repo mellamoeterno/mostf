@@ -26,11 +26,11 @@ export default function CartPage() {
   return (
     <div className="cart-page h-300">
     <main className="container mx-auto p-4 max-w-4xl">
-      <h1 className="text-2xl font-bold mb-6 text-black">Meu Carrrinho (insert)-(insert)-(insert)-</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">Meu Carrrinho</h1>
       
       {cart.length === 0 ? (
         <div className="text-center py-8">
-          <p className="text-gray-500 mb-4">Seu Carrinho Está Vazioo</p>
+          <p className="text-gray-500 mb-4">Seu Carrinho Está Vazio</p>
           <Link 
             href="/update" 
             className="inline-block bg-blue-500 text-black px-4 py-2 rounded hover:bg-blue-600 transition-colors"
