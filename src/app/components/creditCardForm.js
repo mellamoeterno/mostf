@@ -28,7 +28,7 @@ export default function CreditCardForm() {
 
   return (
     <main className="max-w-md mx-auto p-4">
-      <h1 className="text-2xl mb-6">Cartão de </h1>
+      <h1 className="text-2xl mb-6">Cartão de Crédito </h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="border rounded p-2">
           <CardElement options={{ style: { base: { fontSize: '16px' } } }} />
