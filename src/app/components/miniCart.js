@@ -26,7 +26,7 @@ export default function MiniCart() {
         onClick={() => setIsOpen(!isOpen)}
         className="relative bg-black text-white px-4 py-2 rounded shadow hover:bg-gray-800 transition"
       >
-        🛒 Carrinho ({cart.length})
+        🛒 Carrrinho ({cart.length})
         <AnimatePresence>
           {justAdded && (
             <motion.div
