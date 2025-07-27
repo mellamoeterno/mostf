@@ -26,7 +26,7 @@ export default function MiniCart() {
         onClick={() => setIsOpen(!isOpen)}
         className="relative bg-black text-white px-4 py-2 rounded shadow hover:bg-gray-800 transition"
       >
-        🛒 Carrrinho ({cart.length})
+        🛒 Carrinho ({cart.length})
         <AnimatePresence>
           {justAdded && (
             <motion.div
@@ -35,7 +35,7 @@ export default function MiniCart() {
               exit={{ opacity: 0, y: -10 }}
               className="absolute -top-6 -right-2 text-xs bg-green-600 px-2 py-1 rounded shadow text-white"
             >
-              Adicionado!!
+              Adicionado!
             </motion.div>
           )}
         </AnimatePresence>
