@@ -120,35 +120,39 @@ export default function DesktopComponent() {
 
   const blusas = [
     {
+      id: "nome6",
       href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672897/trico_4_plg40d.jpg",
       title: "Blusa tricô",
       desc: "blusa em tricô",
-      price: "199",
+      price: 199,
     },
     {
+      id: "nome7",
       href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672893/pu_3_iibpi1.jpg",
       title: "Jaqueta Pu",
       desc: "jaqueta ultra leve macia",
-      price: "199",
+      price: 199,
     },
     {
+      id: "nome8",
       href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672891/jaquetaOutonoV_1_fktdvc.jpg",
       title: "Jaqueta Outono",
       desc: "jaqueta Outono",
-      price: "199",
+      price: 199,
     }
   ];
 
   const calcas = [
     {
+      id: "nome9",
       href: "https://buy.stripe.com/00w7sLe1EaWq7p75eZ5wI00",
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749679231/trouserBranca_1_xpl4rr.jpg",
       title: "Calça Comfy",
       desc: "calça comfy +",
-      price: "199",
+      price: 199,
     }
   ];
 

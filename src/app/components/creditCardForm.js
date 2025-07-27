@@ -38,7 +38,7 @@ export default function CreditCardForm() {
           disabled={!stripe}
           className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
         >
-          Salvar Cartão
+          Salvar Cartão de Crédito
         </button>
       </form>
     </main>
