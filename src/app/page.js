@@ -166,7 +166,7 @@ export default function DesktopComponent() {
           </div>
        
       {/* Your header, hero and other sections here… */}
-      <img src="/images/mostflogoLarge.jpeg" className="w-full h-full object-cover" />
+      <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1758517835/mostflogoLarge_mzy4ex.jpg" className="w-full h-full object-cover" />
       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center mb-10">Nossos Conjuntos</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
