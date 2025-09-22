@@ -5,6 +5,7 @@ import { useCart } from '../contexts/CartContext';
 import PaymentMethodSelector from '@/app/components/paymentMethodSelector';
 import ParcelOptions from '@/app/components/parcelOptions';
 
+
 export default function CheckoutPage() {
   const { cart } = useCart();
   const [paymentMethod, setPaymentMethod] = useState(null);

@@ -19,12 +19,12 @@ export default function PaymentMethodSelector({ onSelect }) {
       >
         Cartão de Crédito
       </button>
-      <button
+      {/* <button
         onClick={() => handleSelect('pix')}
         className="w-full sm:w-auto px-4 py-2 border rounded hover:bg-gray-100 text-black"
       >
         Pix
-      </button>
+      </button> */}
     </div>
   );
 }
