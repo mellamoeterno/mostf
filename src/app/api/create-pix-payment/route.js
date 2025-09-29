@@ -1,33 +1,27 @@
-/* // src/app/api/create-pix-payment/route.js
-import { NextResponse } from 'next/server';
-import Stripe from 'stripe';
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-
+ // app/api/send-to-zapier/route.js
 export async function POST(req) {
   try {
-    const body = await req.json();
-    // amount in BRL cents (e.g., 199.00 BRL -> 19900)
-    const amountInCents = Math.round((body.amount || 0) * 100);
+    const data = await req.json();
 
-    if (!amountInCents || amountInCents <= 0) {
-      return NextResponse.json({ error: 'Invalid amount' }, { status: 400 });
-    }
+    // 🔗 Replace with your Zapier Webhook URL
+    const zapierWebhookUrl = "https://hooks.zapier.com/hooks/catch/22908097/2nj0gd5/";
 
-    // Create PaymentIntent for Pix - currency must be BRL
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount: amountInCents,
-      currency: 'brl',
-      payment_method_types: ['pix'],
-      // optional: attach metadata with order id, cart snapshot, etc.
-      metadata: body.metadata || {},
+    const zapRes = await fetch(zapierWebhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
     });
 
-    // Return client_secret to the client
-    return NextResponse.json({ clientSecret: paymentIntent.client_secret, paymentIntentId: paymentIntent.id });
+    if (!zapRes.ok) {
+      throw new Error(`Zapier returned ${zapRes.status} ${zapRes.statusText}`);
+    }
+
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (err) {
-    console.error('create-pix-payment error', err);
-    return NextResponse.json({ error: 'Failed to create PaymentIntent' }, { status: 500 });
+    return new Response(
+      JSON.stringify({ success: false, error: err.message }),
+      { status: 500 }
+    );
   }
 }
- */
+ 
